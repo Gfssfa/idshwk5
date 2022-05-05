@@ -1,0 +1,14 @@
+Traceback (most recent call last):
+  File "/seu_share/home/shenlin/asc01/hpc/ids/hw5/test.py", line 94, in <module>
+    main()
+  File "/seu_share/home/shenlin/asc01/hpc/ids/hw5/test.py", line 87, in main
+    if clf.predict([i.returnData()])[0] == 0:
+  File "/seu_share/apps/anaconda3/lib/python3.6/site-packages/sklearn/ensemble/_forest.py", line 629, in predict
+    proba = self.predict_proba(X)
+  File "/seu_share/apps/anaconda3/lib/python3.6/site-packages/sklearn/ensemble/_forest.py", line 683, in predict_proba
+    **_joblib_parallel_args(require="sharedmem"))(
+  File "/seu_share/apps/anaconda3/lib/python3.6/site-packages/joblib/parallel.py", line 649, in __init__
+    prefer=prefer, require=require, verbose=verbose)
+  File "/seu_share/apps/anaconda3/lib/python3.6/site-packages/joblib/parallel.py", line 78, in get_active_backend
+    if prefer not in VALID_BACKEND_HINTS:
+KeyboardInterrupt

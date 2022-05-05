@@ -1,0 +1,52 @@
+Sender: LSF System <lsfadmin@c06n13>
+Subject: Job 251576: <idshw5> in cluster <cluster1> Exited
+
+Job <idshw5> was submitted from host <login01> by user <asc01> in cluster <cluster1> at Fri May  6 00:05:51 2022
+Job was executed on host(s) <24*c06n13>, in queue <normal_test>, as user <asc01> in cluster <cluster1> at Fri May  6 00:10:03 2022
+</seu_share/home/shenlin/asc01> was used as the home directory.
+</seu_share/home/shenlin/asc01/hpc/ids/hw5> was used as the working directory.
+Started at Fri May  6 00:10:03 2022
+Terminated at Fri May  6 00:20:03 2022
+Results reported at Fri May  6 00:20:03 2022
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#!/bin/bash
+#BSUB -J idshw5
+#BSUB -q normal_test
+#BSUB -n 24
+#BSUB -o %J.out
+#BSUB -e %J.err
+module load anaconda3
+source activate hw5
+python3 /seu_share/home/shenlin/asc01/hpc/ids/hw5/test.py
+
+
+------------------------------------------------------------
+
+TERM_ADMIN: job killed by root or an administrator.
+Exited with exit code 1.
+
+Resource usage summary:
+
+    CPU time :                                   603.99 sec.
+    Max Memory :                                 1019 MB
+    Average Memory :                             970.37 MB
+    Total Requested Memory :                     -
+    Delta Memory :                               -
+    Max Swap :                                   -
+    Max Processes :                              4
+    Max Threads :                                28
+    Run time :                                   600 sec.
+    Turnaround time :                            852 sec.
+
+The output (if any) follows:
+
+
+
+PS:
+
+Read file <251576.err> for stderr output of this job.
+
