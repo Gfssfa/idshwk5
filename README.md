@@ -5,7 +5,7 @@ Python3 Preferred
 ### Hint 
 * domain name length 
 * numbers in the domain name 
-* entropy of letteres 
+* entropy of letters 
 * segmentation
 
 ## run code at a HPC cluster
