@@ -6,5 +6,5 @@
 #BSUB -e %J.err
 module load anaconda3
 source activate hw5
-python3 /seu_share/home/shenlin/asc01/hpc/ids/hw5/test.py
+python3 MY_PATH/test.py
 
