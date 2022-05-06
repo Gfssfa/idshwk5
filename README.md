@@ -9,9 +9,9 @@ Python3 Preferred
 * segmentation
 
 ## run code at a HPC cluster
-Running code at my little cloude server needs too much time. Luckily, I have an account of a HPC cluster.
+Running code at my little cloud server needs too much time. Luckily, I have an account of a HPC cluster.
 ### build environment
-To run python scripts, firstly, we need to build environment. Most people may add side-packages at their base environment. A more graceful method is using environment tools like conda to build a special environment for a job. Activate the job's nevironment, add packages and run python scripts. The HPC cluster's job management system is powerd by IBM, if you use other system please follow your job system.
+To run python scripts, firstly, we need to build environment. Most people may add side-packages at their base environment. A more graceful method is using environment tools like conda to build a special environment for a job. Activate the job's nevironment, add packages and run python scripts. The HPC cluster's job management system is powered by IBM, if you use other system please follow your job system.
 ``` bash
 # use module anaconda3 or you can install by yourself
 module load anaconda3
@@ -27,7 +27,7 @@ conda install scikit-learn
 ### how to write a job script
 We need to submit job scripts to run our programs.
 Since scikit-learn does not support GPU, I choose CPU queues to run my python script. 
-A sample of my job script written by shell scripts is as follw.
+A sample of my job script written by shell scripts is as follow.
 ``` shell
 #!/bin/bash
 #BSUB -J idshw5
